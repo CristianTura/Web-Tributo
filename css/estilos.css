@@ -1,158 +1,78 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body {
-    font-family: "PT Serif", serif, "Sans serif";
+body{
+    font-family: 'PT Serif', serif , 'Sans serif';
 }
 header .menu {
     display: flex;
     height: 60px;
-    background: #ffe026;
+    background: #000;
+    border-bottom: 1px solid rgb(238, 238, 238);
 }
-header .menu img {
+header .menu  img{
     margin-top: 15px;
     margin-left: 25px;
     width: 200;
 }
-header .menu a {
+header .menu  a{
+    letter-spacing: 1px;
     margin-left: 80px;
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
+    text-shadow: 0 2px 2px rgb(68, 68, 68);
     align-self: center;
     color: #fff;
 }
-header .banner {
+header .banner{
     height: 472px;
-    background-image: url(../img/bannerdesktop1.png);
+    background-image:url(../img/bannerdesktop1.png)  ;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
-header .banner .texto {
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0) 100%
-    );
+header .banner .texto{
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
     width: 461px;
-    margin-right: 53px;
+    margin-right: 53px;   
     margin-bottom: 32px;
 }
-header .banner p {
+header .banner p{
     font-size: 20px;
+}
+main .container-title{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(238, 238, 238);
 }
 main .title1 {
+    width: 100%;
     height: 45px;
-    background: #e60e0e;
+    background: rgb(26, 25, 25);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid rgb(112, 111, 111);
+    border-bottom: 1px solid rgb(112, 111, 111);
 }
-main .title1 p {
+main .title1 p{
     font-size: 25px;
-    color: #ffffff;
+    color: #FFFFFF;
 }
-.season1 {
+.season1{
+    background:rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.season1::before{
     background-image: url(../img/fondo1.png);
     background-repeat: no-repeat;
-}
-.season1 .description {
-    margin: 0px 112px;
-}
-.season1 .description p {
-    padding-top: 30px;
-    font-size: 22px;
-    font-weight: bold;
-}
-main h2 {
-    margin-top: 50px;
-    font-size: 25px;
-}
-.season1 .description .card {
-    display: flex;
-    justify-content: space-between;
-}
-.season1 .description img {
-    width: 280px;
-    margin-top: 27px;
-}
-.season1 .description .card .text {
-    margin-top: 27px;
-    width: 672px;
-}
-main .chapters {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px 112px;
-    margin-top: 50px;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-}
-main .chapters .chapter {
-    width: 40%;
-    display: flex;
-    padding-bottom: 55px;
-}
-main .chapters .chapter a {
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-    align-self: center;
-    font-size: 17px;
-    font-weight: bold;
-    margin-left: 50px;
-    text-shadow: 1px 1px 1px #fff;
-}
-main .chapters .chapter img {
-    width: 200px;
-}
-main .season1 .synopsis {
-    margin: 0 112px;
-}
-main .season1 .synopsis {
-    margin: 0 112px;
-}
-main .season1 .synopsis .syTitle {
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 50px;
-    padding-top: 50px;
-}
-main .season1 .synopsis .syText {
-    font-size: 20px;
-    padding-bottom: 100px;
-    padding-top: 50px;
-}
-main .title2 {
-    height: 45px;
-    background: #ffe026;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-main .title2 p {
-    font-size: 25px;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000;
-}
-.season2 {
-    background: #fff;
-    /* position: relative;
-    overflow: hidden;  */
-    background-image: url(../img/fondo3.png);
-    background-size: cover;
-    background-repeat: repeat;
-}
-/* .season2:before{ */
-/* background-image: url(../img/fondo3.png) ;
-    background-size: cover;
-    background-repeat: repeat; */
-/* content: ' ';
+    content: ' ';
     display: block;
     position: absolute;
     left: 0;
@@ -160,48 +80,177 @@ main .title2 p {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.6;
-    background-image: url('../img/fondo3.png');
+    opacity: 0.8;
+}
+.season1 .description {
+    margin: 0px 112px;
+    position: relative;
+    z-index: 2;
+}
+.season1 .description p{
+    padding-top: 30px;
+    font-size: 22px;
+    font-weight: bold;  
+}
+main h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    z-index: 2;
+}
+.season1 .description .card{
+    display: flex;
+    justify-content: space-between;
+}
+.season1 .description img{
+    width: 280px;
+    margin-top: 27px;
+}
+.season1 .description .card .text{
+    margin-top: 27px;
+    /* width: 100%; */
+    width: 672px;
+}
+main .chapters{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 112px;
+    margin-top: 50px;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+    /* gap: 40px; */
+}
+main .chapters .chapter{
+    /* gap: 20px; */
+    width: 40%;
+    display: flex;
+    padding: 18px 15px;
+    margin: 20px 0;
+    background-color: rgb(26, 25, 25);
+    border-radius: 4px;
+}
+
+main .chapters .chapter a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    align-self: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 40px;
+    /* text-shadow:1px 1px 1px #fff; */
+    padding: 5px;
+    
+}
+main .chapters .chapter img{
+   width: 200px;
+    border: 1px solid #fff;
+    border-radius: 11px;
+}
+main .season1 .synopsis {
+    position: relative;
+    z-index: 2;
+    margin: 0 112px;
+}
+main .season1 .synopsis {
+    margin: 0 112px;
+}
+main .season1 .synopsis .syTitle{
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 50px;
+   padding-top: 50px;
+}
+main .season1 .synopsis .syText{
+   font-size: 20px;
+   padding-bottom: 100px;
+   padding-top: 50px;
+}
+main .title2 {
+    letter-spacing: 1px;
+    width: 100%;
+    height: 45px;
+    background: rgb(26, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(112, 111, 111);
+    border-bottom: 1px solid rgb(112, 111, 111);
+}
+main .title2 p{
+    font-size: 25px;
+    color: #FFFFFF;
+    text-shadow:1px 1px 1px #000;
+}
+.season2{
+    background:rgba(255, 255, 255, 0);
+    position: relative; 
+}
+
+.season2::before{
+    background-image: url(../img/fondo3.png);
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover; */
-/* } */
+    background-size: cover;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+}
 .season2 .description {
     margin: 0px 112px;
     position: relative;
     z-index: 2;
 }
-.season2 .description p {
+.season2 .description p{
     padding-top: 35px;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: bold;  
 }
-.season2 .description img {
+.season2 .description img{
     width: 280px;
     margin-top: 27px;
 }
+main .chapters .chap2{
+    background-color: #fff;
+}
+main .chapters .chap2 a{
+    color: #000;
+}
+main .chapters .chap2 img{
+    border: 1px solid #000;
+}
 main .title3 {
+    margin-top: 10px;
+    width: 100%;
     height: 45px;
-    background: #ffe026;
+    background: rgb(26, 25, 25);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid rgb(112, 111, 111);
+    border-bottom: 1px solid rgb(112, 111, 111);
 }
-main .title3 p {
+main .title3 p{
+    letter-spacing: 1px;
     font-size: 22px;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000;
+    color: #FFFFFF;
+    text-shadow:1px 1px 1px #000;
 }
 main .data {
     margin: 0 112px;
 }
-main .data .title {
+main .data .title{
     padding-top: 45px;
     font-size: 25px;
     color: #000;
     font-weight: bold;
 }
-main .data .person {
+main .data .person{
     font-size: 20px;
     padding-top: 55px;
 }
@@ -218,32 +267,34 @@ main .data .personages {
     font-size: 20px;
     margin-bottom: 20px;
 }
-main .data .textDiv {
+main .data .textDiv{
     margin: 70px 0px;
 }
-main .data .textDiv .text {
+main .data .textDiv .text{
     font-size: 20px;
     line-height: 25px;
 }
-.data .textDiv .text span {
+.data .textDiv .text span{
     line-height: 100px;
     font-weight: bold;
 }
 footer .foot {
     height: 50px;
-    background: #5c5c5c;
+    background: #5C5C5C;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center
 }
-footer .foot p {
+footer .foot p{
     padding-right: 300px;
-    color: #ffffff;
+    color: #FFFFFF;
 }
-footer .foot img {
+footer .foot img{
     width: 30px;
     margin-right: 46px;
 }
+
+
 
 /* ---------------------- */
 header .menuDown {
@@ -253,24 +304,24 @@ header .menuDown {
 header .menuDown ul {
     display: none;
     position: absolute;
-    background: #ffffff;
+    background:#FFFFFF;
     width: 133px;
     right: 5%;
     padding: 10px 20px;
 }
-header .menuDown ul a {
+header .menuDown ul a{
     font-size: 14px;
     margin: 5px 0;
-    text-decoration: underline #e60e0e;
+    text-decoration:underline #E60E0E;
     color: #000;
 }
 header .menuDown:hover > ul {
     display: block;
     z-index: 1;
 }
-@media screen and (max-width: 20000px) {
+@media screen and (max-width:20000px) {
     header .menuDown {
-        display: none;
+        display:none;
     }
     main .chapters .watchC {
         display: none;
@@ -282,7 +333,7 @@ header .menuDown:hover > ul {
         justify-content: space-between;
     }
     header .menuDown {
-        display: inline-block;
+        display:inline-block;
     }
     header .menu .menuNormal {
         display: none;
@@ -291,48 +342,58 @@ header .menuDown:hover > ul {
         width: 150px;
         height: 30px;
     }
-    header .banner {
+    header .banner{
         height: 135px;
         background-size: 414px;
     }
-    header .banner .texto {
+    header .banner .texto{
         width: 346px;
         height: 102px;
-        margin-right: 9px;
+        margin-right: 9px;   
         margin-bottom: 9px;
     }
-    header .banner p {
+    header .banner p{
         font-size: 15px;
         /* padding-right: 20px; */
     }
-    main .title1 {
-        height: 30px;
+    main .container-title{
+        display: flex;
+        align-items: center;
+        height: 45px;
+        background-color: rgb(238, 238, 238);
     }
-    main .title1 p {
+    main .title1 {
+        height: 35px;
+    }
+    main .title1 p{
         font-size: 18px;
     }
-    .season1 {
-        background-size: 414px;
-        background-attachment: fixed;
+    .season1{
+        background-size: 100%;
+        background: #fff;
+    }
+    .season1::before{
+        background: #fff;
+        
     }
     .season1 .description {
         margin: 0px 35px;
     }
-    .season1 .description p {
+    .season1 .description p{
         padding-top: 15px;
         font-size: 17px;
         text-align: center;
     }
-    .season1 .description img {
+    .season1 .description img{
         display: none;
     }
-    .season1 .description .card .text {
+    .season1 .description .card .text{
         margin-top: 11px;
         width: 342px;
         /* height: 98px;
         overflow: hidden; */
     }
-    .season1 .description .card p {
+    .season1 .description .card p{
         font-size: 14px;
         text-align: left;
     }
@@ -340,24 +401,25 @@ header .menuDown:hover > ul {
         margin-top: 35px;
         font-size: 19px;
     }
-    main .chapters {
+    main .chapters{
         margin: 0px 35px;
-        margin-top: 35px;
-        height: 670px;
+        margin-top: 25px;
+        height: 700px;
         overflow: hidden;
         /* left: 35px; */
     }
-    main .chapters .chapter {
+    main .chapters .chapter{
         width: 100%;
-        padding-bottom: 35px;
+        margin: 10px 0;
+        /* padding-bottom: 25px; */
     }
-    main .chapters .chapter a {
+    main .chapters .chapter a{
         align-self: center;
         font-size: 13px;
         margin-left: 20px;
     }
-    main .chapters .chapter img {
-        width: 100px;
+    main .chapters .chapter img{
+       width: 100px;
     }
     main .chapters .watchC {
         font-size: 15px;
@@ -375,70 +437,82 @@ header .menuDown:hover > ul {
         margin-bottom: 30px;
         /* width: auto; */
     }
-    main .season1 .synopsis .syTitle {
-        font-size: 20px;
-        line-height: 50px;
-        padding-top: 10px;
-        padding-left: 30px;
+    main .season1 .synopsis .syTitle{
+       font-size: 20px;
+       line-height: 50px;
+       padding-top: 10px;
+       padding-left: 30px;
     }
-    main .season1 .synopsis .syText {
-        font-size: 15px;
-        padding-left: 30px;
-        padding-bottom: 30px;
-        padding-top: 20px;
+    main .season1 .synopsis .syText{
+       font-size: 15px;
+       padding-left: 30px;
+       padding-bottom: 30px;
+       padding-top: 20px;
     }
     main .title2 {
-        height: 30px;
+        height: 35px;
     }
-    main .title2 p {
+    main .title2 p{
         font-size: 18px;
     }
-    .season2 {
-        background-size: fixed;
-        background-attachment: fixed;
-        left: 20px;
+
+    .season2{
+        background-size: 100%;
+        background: #fff;
+    }
+    .season2::before{
+        background: #fff;
     }
     .season2 .description {
         margin: 0px 35px;
         width: auto;
         /* left: 20px; */
     }
-    .season2 .description p {
+    .season2 .description p{
         padding-top: 15px;
         font-size: 17px;
         width: auto;
     }
-    .season2 .description img {
+    .season2 .description img{
         display: none;
     }
-    .season2 .description .text {
+    .season2 .description .text{
         margin-top: 11px;
         width: 342px;
         /* height: 98px;
         overflow: hidden; */
     }
-    .season2 .description .text p {
+    .season2 .description .text p{
         font-size: 14px;
         text-align: left;
     }
-    main .title3 {
-        height: 30px;
+    main .chapters .chap2{
+        background-color: #000;
     }
-    main .title3 p {
+    main .chapters .chap2 a{
+        color: #fff;
+    }
+    main .chapters .chap2 img{
+        border: 1px solid #fff;
+    }
+    main .title3 {
+        height: 35px;
+    }
+    main .title3 p{
         font-size: 18px;
     }
     main .data {
-        margin: 0 35px;
+        margin: 10px 35px;
     }
-    main .data .title {
+    main .data .title{
         padding-top: 15px;
         font-size: 17px;
         text-align: center;
     }
-    main .data .title span {
-        display: none;
+    main .data .title span{
+        display:  none;
     }
-    main .data .person {
+    main .data .person{
         font-size: 17px;
         padding-top: 25px;
         text-align: left;
@@ -447,24 +521,24 @@ header .menuDown:hover > ul {
         margin-top: 26px;
         width: 45%;
     }
-    .data .personages .boros {
+    .data .personages .boros{
         display: none;
     }
-    .data .personages .personage img {
+    .data .personages .personage img{
         width: 150px;
     }
     .data .personages .personage p {
         font-size: 14px;
         margin-bottom: 10px;
     }
-    main .data .textDiv {
+    main .data .textDiv{
         margin: 30px 0px;
     }
-    main .data .textDiv .text {
+    main .data .textDiv .text{
         font-size: 15px;
         line-height: 20px;
     }
-    .data .textDiv .text span {
+    .data .textDiv .text span{
         line-height: 25px;
         font-weight: bold;
     }
@@ -472,15 +546,16 @@ header .menuDown:hover > ul {
         height: 40px;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: center
     }
-    footer .foot p {
+    footer .foot p{
         padding-right: 50px;
-        color: #ffffff;
+        color: #FFFFFF;
         font-size: 10px;
     }
-    footer .foot img {
+    footer .foot img{
         width: 20px;
         margin-right: 26px;
     }
+    
 }
